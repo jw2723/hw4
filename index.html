@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oxford Comma Preferences</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- d3 for visualization -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <!-- quiz content -->
+    <div id="quiz-container">
+        <img src="pic.jpeg" alt="Oxford Comma" id="oxford-comma-pic">
+        <p id="quiz-question">Which sentence is grammatically correct?</p>
+        <button id="with-comma" class="quiz-button-yes">It's important for a person to be honest, kind, and loyal.</button>
+        <button id="without-comma" class="quiz-button-no">It's important for a person to be honest, kind and loyal.</button>
+    </div>
+
+    <!-- results page initially hidden -->
+    <div id="results-page" style="display: none;">
+        <div id="results-container"></div> <!-- Where the pie chart will be drawn -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

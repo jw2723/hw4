@@ -1,0 +1,78 @@
+/* general body styling and background */
+body {
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* center align the content */
+    background-color: #cdcbc6;
+    cursor: url('comma-icon.png'), auto;
+}
+
+/* for the picture */
+#oxford-comma-pic {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* center the image */
+    display: block;
+    margin-top: 10px;
+}
+
+/* styles for the quiz question */
+#quiz-question {
+    font-size: 45px;
+    font-family: American Typewriter, serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    /* font-weight: bold; */
+
+}
+
+/* styles for yes button */
+.quiz-button-yes {
+    background-color: #4CAF50;
+    color: rgb(245, 255, 243);
+    padding: 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    font-size: 30px;
+    font-family: American Typewriter, serif;
+    margin: 20px auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: url('comma-icon.png'), auto; /* style remains when touching button */
+}
+
+/* styles for no button */
+.quiz-button-no {
+    background-color: #c02424;
+    color: rgb(254, 236, 236);
+    padding: 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    font-size: 30px;
+    font-family: American Typewriter, serif;
+    display: block;
+    margin: 20px auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: url('comma-icon.png'), auto; /* style remains when touching button */
+}
+
+/* buttons darken slightly when hovered over */
+.quiz-button-yes:hover, .quiz-button-no:hover {
+    filter: brightness(88%);
+}
+
+
+/* styling for results container */
+#results-container {
+    font-size: 20px;
+    font-family: American Typewriter, serif;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    display: block;
+}
