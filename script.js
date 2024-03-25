@@ -68,7 +68,7 @@ function drawPieChart(data) {
     const arc = svg.selectAll('.arc')
         .data(pie(data))
         .enter().append('g')
-        .attr('class', 'arc'); // Class used for styling and selection
+        .attr('class', 'arc');
 
     // draw pie slices with transition effect
     arc.append('path')
@@ -106,10 +106,10 @@ function drawPieChart(data) {
     // text labels to each pie slice
     arc.append("text")
         .attr("transform", function(d) { return "translate(" + path.centroid(d) + ")"; }) // Position text at slice centroid
-        .attr("dy", "5px") // Vertically center text
-        .attr("text-anchor", "middle") // Horizontally center text
+        .attr("dy", "5px") // vertical center
+        .attr("text-anchor", "middle") // horizontally center
         .text(function(d) { return `${d.data.option}: ${d.data.value.toFixed(1)}%`; }) // Display text
-        .style("fill", "#fff"); // Text color
+        .style("fill", "#fff");
 }
 
 
